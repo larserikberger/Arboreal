@@ -1,0 +1,403 @@
+/* Core Styles */
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #9ec67a;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;  
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;    
+}
+
+.btn {
+    display: inline-block;
+    background: darkgreen;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    //border: 0.063rem solid #9ec67a;
+    margin: .5 0;align-items;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: #fff;
+    color: darkgreen;
+}
+
+
+/* Nav bar */
+
+
+.nav{
+    position: relative;  
+    }
+
+nav{
+    background: darkgreen;;
+    }
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 1.25rem;
+    font-size: 0.7em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+nav a:hover{
+    background: #fff;
+    color: darkgreen;
+}
+
+
+/* Header Showcase */
+
+.showcase {
+  min-height: 28.125rem;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+
+.showcase .bg-image {
+    position: absolute;
+    background: #333
+    url("https://static.pexels.com/photos/380768/pexels-photo-380768.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.2;   
+}
+
+.showcase h1 {
+  padding-top: 7.5rem;
+  padding-bottom: 0;
+  font-size: 2.2rem;
+  //text-transform: uppercase;
+  letter-spacing: 0.0.9rem;
+  line-height: 1; 
+}
+
+.showcase p{
+   line-height: 1; 
+}
+
+.showcase .content-wrap,
+.section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+
+.showcase .logo{
+    position: absolute;
+    width: 3rem;
+    top: 2.1rem;
+    left: 50%;
+    margin-left: -1.5rem;
+}
+
+
+
+
+/* Section A */
+
+.section-a {
+    background: #fff;
+    padding: 2em;
+    color: seagreen;
+    font-weight: 300;
+}
+
+/* Section B */
+
+.section-b {
+    padding: 1em;    
+}
+
+.section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section-b li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+
+.card-content {
+    padding: 1.5em;   
+}
+
+.section-b h3{
+    text-transform: uppercase;
+    color: seagreen;   
+}
+
+.section-b p{
+    font-weight: 300;
+    color: seagreen;
+}
+
+
+/* Contact Form */
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  color:seagreen;
+  max-width:1500px;
+  font-size: 0.7em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+ul{
+  list-style: none;
+  padding:1;  
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.contact{
+  background: #fff;
+}
+
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.25rem;
+}
+
+.contact form label{
+  display:block;
+}
+
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+
+label{
+    text-align: left;
+    padding-bottom: 0.5rem;
+    font-size: 0.7rem
+}
+
+.contact form button, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1em;
+  border:1px dotted seagreen;
+}
+
+.contact form button{
+  background:seagreen;
+  border:0;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background:#eaeaea;
+  color:#333;
+  outline:0;
+  transition: background-color 0.5s ease-out;
+}
+    
+
+
+/* Section C */
+
+
+.section-c {
+    background: #fff;
+    color: seagreen;
+    padding: 2em;
+}
+
+.section-c .box {
+    padding: 2em;
+    color: #fff;
+}
+
+
+/* Section D / Boxes */
+
+
+.section-d .box {
+  padding: 2em;
+  color: #fff;
+}
+
+.section-d .box:first-child {
+    background: darkgreen;
+}
+
+
+/* Footter*/
+
+
+.main-footer{
+    padding: 2em;
+    background: seagreen;
+    color: #fff;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;    
+}
+
+
+.main-footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+/* Media Queries */
+
+
+@media(min-width: 700px) {
+    
+    
+    /* Nav bar */
+    
+    nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2em;
+    }
+    
+    nav li{
+    //flex: 1 1 0;
+    }   
+    
+  
+    /* Logo */
+    
+    .showcase .logo{
+    position: absolute;
+    width: 4rem;
+    top: 1.5rem;
+    left: 2.6rem;
+    }
+
+    
+    /* Section A */
+    
+    
+    .section-a {
+    background: #fff;
+    padding: 2em;
+    color: seagreen;    
+    }
+    
+    
+    
+    /* Contact form */
+   
+    
+    .container{
+       display: grid;
+       grid-column: 1/5;     
+        }
+
+     .contact{
+        padding-left: 12rem;
+        padding-right: 12rem;
+        }
+    
+    
+    
+    
+    /* Grids */
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    
+    .section-a .content-text {
+        columns: 1;
+        column-gap: 2em;
+    }
+    
+    .section-a .content-text p {
+        padding-top: 0;
+    }
+    
+    
+    
+    .content-wrap,
+    .section-b ul {
+        grid-column: 2/4;
+    }
+    
+    
+    .box{
+        grid-column: span 2;
+    }
+    
+    .main-footer div {
+        grid-column: span 4;
+        text-align: center;
+        line-height: 1.7;
+    }
+    
+    .section-b ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .section-b li {
+        width: 31%;
+    }
+    
+    
+}
+
+
+
